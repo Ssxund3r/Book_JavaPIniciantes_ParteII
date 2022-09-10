@@ -8,7 +8,7 @@ public class B extends A {
 		super.i = a; // i de A -> Aqui a variável super.i referencia a variável A
 		i = b; // i de B
 	}
-	
+
 	void show() {
 		System.out.println("i in superclass: " + super.i);
 		System.out.println("i in subclass: " + i);
