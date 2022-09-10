@@ -8,9 +8,20 @@ class TwoDShape {
 	private double width;
 	private double height;
 
+	// Construtor padrão.
+	TwoDShape() {
+		width = height = 0;
+	}
+
+	// Construtor parametrizado
 	public TwoDShape(double w, double h) {
 		width = w;
 		height = h;
+	}
+
+	// Constrói o objeto com altura e largura iguais.
+	TwoDShape(double x) {
+		width = height = x;
 	}
 
 	public double getWidth() {
