@@ -2,7 +2,7 @@ package capitulo7Heranca;
 
 //Uma hierarquia de calsse simples.
 //Uma classe para objetos de duas dimensões. 
-public class TwoDShape {
+class TwoDShape {
 	double width;
 	double height;
 
@@ -10,6 +10,5 @@ public class TwoDShape {
 		System.out.println("Width and height are " + width + 
 				" and " + height);
 	}
-	
 	
 }
