@@ -4,12 +4,11 @@ package capitulo7Heranca;
 public class Triangle extends TwoDShape {
 	String style;
 
-	public Triangle(String s, double h, double w) {
-		setWidth(w);
-		setHeight(h);
+	public Triangle(String s, double w, double h) {
+		super(w, h); //Chama o construtor da superclasse
 		style = s;
 	}
-	
+
 	double area() {
 		return getWidth() * getHeight() / 2;
 	}

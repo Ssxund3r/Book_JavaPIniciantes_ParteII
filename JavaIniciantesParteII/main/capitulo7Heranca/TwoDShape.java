@@ -1,11 +1,17 @@
 package capitulo7Heranca;
 
 //Uma hierarquia de calsse simples.
-//Uma classe para objetos de duas dimensões. 
+//Uma classe para objetos de duas dimensões.
+//Adiciona construtores a TwoDShape
 class TwoDShape {
 	// Agora estes atributos são privados.
 	private double width;
 	private double height;
+
+	public TwoDShape(double w, double h) {
+		width = w;
+		height = h;
+	}
 
 	public double getWidth() {
 		return width;
@@ -24,8 +30,7 @@ class TwoDShape {
 	}
 
 	void showDim() {
-		System.out.println("Width and height are " +
-	width + " and " + height);
+		System.out.println("Width and height are " + width + " and " + height);
 	}
 
 }
