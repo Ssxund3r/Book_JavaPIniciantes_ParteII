@@ -4,14 +4,14 @@ package capitulo7Heranca;
 public class Rectangle extends TwoDShape {
 
 	boolean isSquare() {
-		if (width == height)
+		if (getWidth() == getHeight())
 			return true;
 		else
 			return false;
 	}
 
 	double area() {
-		return width * height;
+		return getWidth() * getHeight();
 	}
 	
 }
