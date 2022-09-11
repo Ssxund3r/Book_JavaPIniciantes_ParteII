@@ -2,7 +2,7 @@ package capitulo7Heranca;
 
 //uma subclasse de TwoDShape para triângulos
 public class Triangle extends TwoDShape {
-	String style;
+	private String style;
 	
 	//Construtor padrão
 	public Triangle() {
@@ -12,16 +12,23 @@ public class Triangle extends TwoDShape {
 	
 	//Construtor
 	public Triangle(String s, double w, double h) {
-		super(w, h); //Chama o construtor da superclasse
+		super(w, h, "Triangle"); //Chama o construtor da superclasse
 		style = s;
 	}
 	
 	//construtor com argumento 
 	Triangle(double x){
-		super(x);
+		super(x, "Triangle");
 		style = "filled";
 	}
-
+	
+	//Constrói um objeto a partir de outro
+	Triangle(Triangle ob){
+		super(ob); //Passa o objeto para construtor de TwoDShape
+		style = ob.style;
+	}
+	
+	//Sobrepõe area() para Triangle.
 	double area() {
 		return getWidth() * getHeight() / 2;
 	}
