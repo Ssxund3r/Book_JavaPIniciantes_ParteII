@@ -1,0 +1,9 @@
+package capitulo7Heranca;
+
+public class Override {
+	public static void main(String[] args) {
+		B subOb = new B(1, 2, 3);
+		
+		subOb.show(); // chama show() em B
+	}
+}
