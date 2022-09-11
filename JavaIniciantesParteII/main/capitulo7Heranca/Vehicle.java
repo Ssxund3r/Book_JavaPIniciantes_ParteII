@@ -23,7 +23,7 @@ public class Vehicle {
 		return (double) miles / mpg;
 	}
 	
-	//Métodos de acesso de variáveis de instância
+	//Métodos de acesso de variáveis de instância.
 	public int getPassengers() {
 		return passengers;
 	}
