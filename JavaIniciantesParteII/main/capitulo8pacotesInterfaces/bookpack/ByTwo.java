@@ -1,10 +1,10 @@
 package capitulo8pacotesInterfaces.bookpack;
 
-public class ByTwos implements Series{
+public class ByTwo implements Series{
 	int start;
 	int val;
 	
-	public ByTwos() {
+	public ByTwo() {
 		start = 0;
 		val = 0;
 	}
@@ -21,9 +21,9 @@ public class ByTwos implements Series{
 	}
 
 	@Override
-	public void setStar(int x) {
+	public void setStart(int x) {
 		start = x;
 		val = x;
+		
 	}
-
 }
